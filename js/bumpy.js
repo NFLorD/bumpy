@@ -15,17 +15,17 @@ let position = true;
 /* STYLES */
 function handleBumpyMouseOver(){
 	if(position){
-		bumpy.style.top = 100+Math.random()*300+"px";
-		bumpy.style.left = 400+Math.random()*300+"px";
-		bumpy.style.right = 600-Math.random()*300+"px";
-		bumpy.style.bottom = 300-Math.random()*300+"px";
+		bumpy.style.top = 100+Math.random()*500+"px";
+		bumpy.style.left = 400+Math.random()*500+"px";
+		bumpy.style.right = 600-Math.random()*500+"px";
+		bumpy.style.bottom = 300-Math.random()*500+"px";
 	}
 	if(couleur){
 		bumpy.style.backgroundColor = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
 	}
 	if(taille){
-		bumpy.style.width = (10+Math.random()*300)+"px";
-		bumpy.style.height = (10+Math.random()*300)+"px";
+		bumpy.style.width = (10+Math.random()*500)+"px";
+		bumpy.style.height = (10+Math.random()*500)+"px";
 	}
 	if(radius){
 		bumpy.style.borderRadius = Math.random()*50+"%";
@@ -40,42 +40,22 @@ function handleClickButtonShow(){
 
 /* OPTION 1 */
 function handleClickButtonCouleur(){
-	if(couleur){
-		couleur=false;
-	}
-	else{
-		couleur=true;
-	}
+	couleur ? couleur=false : couleur=true;
 }
 
 /* OPTION 2 */
 function handleClickButtonTaille(){
-	if(taille){
-		taille=false;
-	}
-	else{
-		taille=true;
-	}
+	taille ? taille=false : taille=true;
 }
 
 /* OPTION 3 */
 function handleClickButtonRadius(){
-	if(radius){
-		radius=false;
-	}
-	else{
-		radius=true;
-	}
+	radius ? radius=false : radius=true;
 }
 
 /* OPTION 4 */
 function handleClickButtonPosition(){
-	if(position){
-		position=false;
-	}
-	else{
-		position=true;
-	}
+	position ? position=false : position=true;
 }
 
 /* RESET */

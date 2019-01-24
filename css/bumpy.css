@@ -15,6 +15,7 @@ body{
 	left: 600px;
 	border-radius: 50%;
 	grid-area: bumpy;
+	transition: all 0.15s;
 }
 
 .hidden{
