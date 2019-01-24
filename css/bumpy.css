@@ -1,0 +1,38 @@
+body{
+	display: grid;
+	grid-template-areas: 
+		"header header header",
+		". bumpy .",
+		". . .";
+}
+
+#bumpy{
+	background-color: firebrick;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	border-radius: 50%;
+	grid-area: bumpy;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+header *{
+	display: inline-block;
+}
+
+main button{
+	display: block;
+	margin-top: 5px;
+}
+
+footer button{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 10px;
+}
